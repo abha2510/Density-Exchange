@@ -1,0 +1,68 @@
+
+  .flower {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 50%;
+    /* margin-top: -45px; */
+  }
+  
+  .petal {
+    background: #e2b172;
+    height: 80px; 
+    width: 80px; 
+    border-radius: 40px; 
+    position: absolute;
+  }
+  
+  .core {
+    background:#d68e4a;
+    height: 50px; 
+    width: 50px; 
+    border-radius: 40px; 
+    position: absolute;
+    margin-top: 15px;
+  }
+
+  .core p {
+    font-size: 16px; /* was 20px */
+    text-align: center;
+    border: 0px solid white;
+    margin-top: 15px;
+}
+
+  
+.petal-1 {
+    margin-top: -24px; /* Adjusted from -48px */
+}
+
+.petal-2 {
+    margin-left: -40px; /* Adjusted from -80px */
+    margin-top: -5px; /* Adjusted from -10px */
+}
+
+.petal-3 {
+    margin-right: -40px; /* Adjusted from -100px */
+    margin-top: -5px; /* Adjusted from -10px */
+}
+
+.petal-4 {
+    padding-top: 20px; /* Adjusted from 45px */
+    margin-left: -30px; /* Adjusted from -65px */
+}
+
+.petal-5 {
+    padding-top: 20px; /* Adjusted from 45px */
+    margin-right: -30px; /* Adjusted from -70px */
+}
+.flower:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: -15px; /* Adjusted from -30px */
+    top: 50%;
+    height: 1px; /* Adjusted for smaller size */
+    width: 30px; /* Adjusted from 60px */
+    background: #e2b172;
+    z-index: -1;
+}
+

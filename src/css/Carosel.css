@@ -1,0 +1,59 @@
+
+.box{
+    height: 230px;
+    width: 300px;
+    border: 0px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    /* color: 	#6035ee; */
+  }
+  p{
+    margin-top: 4px;
+  }
+
+  .emoji{
+    font-size: 30px;
+  }
+
+  .text{
+    text-align: left;
+    color: gray;
+  }
+  .head{
+    font-weight: bold;
+  }
+
+  .tilted-div {
+    width: 330px;
+    height: 220px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    transform: rotate(-8deg); /* Adjust the angle as needed */
+    transform-origin: left center; /* Rotate around the left side */
+    margin-left: 20px; /* Create a visual effect of the div shifting towards the left */
+  }
+  @keyframes waveMovement {
+    0% {
+        transform: translateX(100vw);
+    }
+    25% {
+        transform: translateX(75vw) translateY(10px);
+    }
+    50% {
+        transform: translateX(50vw) translateY(-10px);
+    }
+    75% {
+        transform: translateX(25vw) translateY(10px);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+.waveAnimation {
+    animation: waveMovement 5s forwards;
+        transform: rotate(-8deg);
+        transform-origin: left center; 
+        margin-left: 20px; 
+}
